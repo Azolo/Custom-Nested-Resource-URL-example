@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <% @user.posts.each do |post| %>
+      <%= link_to "Post ##{post.user_post_id}", user_post_path(@user, post) %><br />
+  <% end %>
+</p>
+
+<p>
+  <%= link_to "Create new post", new_user_post_path(@user) %> 
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

@@ -1,0 +1,12 @@
+== Custom Nested Resource URL example
+
+This is just a quick sample I created for this {stackoverflow question} [http://stackoverflow.com/a/8753998/527152]
+
+It shows how to create an independent number system for each user's posts in Ruby on Rails.
+
+ie.
+
+    /users/1/posts/1
+    /users/1/posts/2
+    /users/2/posts/1
+    etc.
