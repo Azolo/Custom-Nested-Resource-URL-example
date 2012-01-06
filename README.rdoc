@@ -1,6 +1,6 @@
 == Custom Nested Resource URL example
 
-This is just a quick sample I created for this {stackoverflow question} [http://stackoverflow.com/a/8753998/527152]
+This is just a quick sample I created for this {stackoverflow question}[http://stackoverflow.com/a/8753998/527152]
 
 It shows how to create an independent number system for each user's posts in Ruby on Rails.
 
