@@ -1,5 +1,9 @@
 UserNestedPath::Application.routes.draw do
 
+  get "users_edit", :to => "users_batch#users_edit"
+
+  post "users_post", :to => "users_batch#users_post"
+
   resources :users do
     resources :posts
   end

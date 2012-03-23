@@ -1,0 +1,16 @@
+<%= form_for @user_set, :url => '/users_post' do |l| %>
+
+  <%= l.fields_for :users do |f| %>
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+
+    <%= f.fields_for :posts do |p| %>
+      <%= p.text_area :text %>
+    <% end %>
+  <% end %>
+  <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>
